@@ -1,5 +1,5 @@
 async function post(endpoint, params) {
-    return fetch('http://127.0.0.1:5500' + endpoint, {
+    return fetch(endpoint, {
         credentials: 'include',
         body: params,
         method: 'POST',
