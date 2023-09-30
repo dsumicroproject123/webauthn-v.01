@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAuthn-RP Registration Example</title>
+</head>
+<body>
+    <h3>WebAuthn-RP Registration and Authentication Example</h3>
+    <hr /><br />
+
+    Username: <input type="text" id="username" />
+    <button onclick="register()">Register</button>
+    <button onclick="authenticate()">Authenticate</button>
+
+    <br /><br /><hr />
+
+    <span style='color: green;'>STATUS: </span><span id='status'></span>
+
+    <script src="{{ url_for('static', filename='js/client.js') }}"></script>
+</body>
+</html>
